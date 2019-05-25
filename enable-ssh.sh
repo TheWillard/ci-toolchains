@@ -21,7 +21,7 @@ fi
 trap 'sudo ufw deny OpenSSH >/dev/null' EXIT SIGHUP SIGINT SIGQUIT SIGTERM ERR
 echo "1"
 # open 22 port for management network interface
-sudo ufw allow OpenSSH > /dev/null 2>&1
+#sudo ufw allow OpenSSH > /dev/null 2>&1
 echo "2"
 # get external IP address via https://www.appveyor.com/tools/my-ip.aspx
 EXT_IP=$(curl -sf https://www.appveyor.com/tools/my-ip.aspx)
