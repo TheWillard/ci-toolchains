@@ -19,7 +19,7 @@ if ! ssh-keygen -E md5 -lf /dev/stdin <<< "${APPVEYOR_SSH_KEY}" >/dev/null; then
 fi
 
 trap 'sudo ufw deny OpenSSH >/dev/null' EXIT SIGHUP SIGINT SIGQUIT SIGTERM ERR
-echo "1"
+echo "sss 1"
 echo "2"
 echo "2"
 # get external IP address via https://www.appveyor.com/tools/my-ip.aspx
